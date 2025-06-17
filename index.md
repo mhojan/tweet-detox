@@ -2,6 +2,10 @@
 layout: none
 ---
 
+<!-- Analytics -->
+
+<script defer data-domain="mhojan.github.io" src="https://plausible.io/js/script.file-downloads.outbound-links.js"></script>
+
 <!-- Head -->
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
@@ -94,7 +98,7 @@ summary {
 }
 </style>
 
-<!-- Tutorial -->
+<!-- Title -->
 
 <main style="text-align: center;">
 
@@ -109,3 +113,28 @@ summary {
 </div>
 
 </main>
+
+<!-- Table of contents -->
+
+## 🧭 Table of Contents
+
+- [⏱️ Introduction](#-introduction)
+
+<!-- Introduction --> 
+
+## 🙋🏾‍♀️ Introduction
+
+Hello 👋🏾 and welcome! My name is MJ, and I'm a Senior Software Engineer specialized in iOS 📲. 
+
+With privacy getting harder to protect as technology advances, I've been working on cleaning up my digital footprint. One of my biggest missions? Deleting my old tweets. I've had my account since high school.. and i am **embarazzed** by the things i used to do and say! Like what was i even talking about? lol
+
+I searched **everywhere** for tools to wipe them, but most were either broken, sketchy, or required payment. Just as I was about to give up, I had a lightbulb moment and realized: **I can do it myself** 💡 
+
+With a little research and effort, I put together a script that helped me delete over **40,000 tweets 🎉**. After sharing it with friends, I got a lot of requests to help others do the same. So, here we are.
+
+<div class="info-box">
+<strong>This tutorial is beginner friendly </strong>. No tech experience is needed. This runs 100% local, so your data never leaves your machine. No logins, no hidden apps -- just you, your archive, and a script 😀
+</div>
+
+Just follow my lead, and let me know if you run into issues. Let's get into it! 🚀
+
