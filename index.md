@@ -4,7 +4,7 @@ layout: none
 
 <!-- Analytics -->
 
-<script defer data-domain="mhojan.github.io/tweet-detox" src="https://plausible.io/js/script.file-downloads.outbound-links.js"></script>
+<script defer data-domain="mhojan.github.io" src="https://plausible.io/js/script.file-downloads.outbound-links.js"></script>
 
 <!-- Head -->
 
@@ -14,12 +14,12 @@ layout: none
 
 <style>
 :root {
-  --bg-color: #f2f0ec;
-  --main-bg-color: #f8f5f2;
+  --bg-color: #e8e6e1;
+  --elevated-bg-color: #f8f5f2;
   --info-box-bg-color: #e6e6e6;
   --code-box-bg-color: #dcdfe3;
 
-  --text-color: #2e2e2e;
+  --text-color: #s;
   --link-color: #0070f3;
   --link-hover-color: #0050c2;
 }
@@ -76,6 +76,15 @@ a:hover {
     margin-top: 1rem;
 }
 
+ul, ol {
+  line-height: 1.75; /* Match your body line-height or adjust as needed */
+  margin-bottom: 1rem; /* Optional: adds breathing room below lists */
+}
+
+li {
+  margin-bottom: 0.5rem; /* Optional: adds space between individual list items */
+}
+
 .image-div {
   text-align: center;
   max-width: 75%;
@@ -97,7 +106,7 @@ code {
 }
 
 summary {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin: 0.5em 0;
   cursor: pointer;
@@ -126,7 +135,7 @@ th {
 }
 
 .elevated-container {
-  background-color: var(--main-bg-color);
+  background-color: var(--elevated-bg-color);
   margin: 0 auto;
   margin-bottom: 2rem;
   padding: 3rem 2rem;
@@ -201,7 +210,7 @@ hr {
 
 <h2 id="introduction">🙋🏾‍♀️ Introduction</h2>
 
-<p>Hello 👋🏾 and welcome! My name is Me, and I'm a Senior Software Engineer specialized in iOS 📲.</p>
+<p>Hello 👋🏾 and welcome! My name is MJ, and I'm a Senior Software Engineer specialized in iOS 📲.</p>
 
 <p>
 With privacy getting harder to protect as technology advances, I've been working on cleaning up my digital footprint. One of my biggest missions? Deleting my old tweets. I've had my account since high school.. and I am <strong>embarazzed</strong> by the things I used to do and say! Like what was I even talking about? lol
@@ -343,7 +352,7 @@ Great! Lets get started.. 🏃🏾‍♀️
     </ul>
   </li>
   <li>
-    Then unzip it:
+    If its not already unzipped:
     <ul>
       <li>On <strong>Mac</strong>: double-click the file</li>
       <li>On <strong>Windows</strong>: right-click → <strong>Extract All</strong></li>
@@ -363,7 +372,7 @@ Lets head on over to your internet browser 🔍
 <!-- Request to download archive-->
 
 <details>
-  <summary>Request to download archive</summary>
+  <summary>1️⃣ Request to download archive</summary>
 
   <ul>
     <li>Log in to your X account</li>
@@ -397,7 +406,7 @@ Lets head on over to your internet browser 🔍
 <!-- Download your archive -->
 
 <details>
-  <summary>Download your archive</summary>
+  <summary>2️⃣ Download your archive</summary>
 
   <ul>
     <li>When you get the email, open the link (or revisit the account settings page)</li>
@@ -432,7 +441,7 @@ Lets head on over to your internet browser 🔍
 <!-- Open your archive -->
 
 <details>
-  <summary>Open your archive</summary>
+  <summary>3️⃣ Open your archive</summary>
 
   <ul>
     <li>Unzip the file.</li>
@@ -459,7 +468,7 @@ Lets head on over to your internet browser 🔍
 <!-- Create a developer account -->
 
 <details>
-<summary>Create a developer account</summary>
+<summary>1️⃣ Create a developer account</summary>
 
 <p>In order to run the tweet deletion script, you'll need a set of API credentials. This means creating a <strong>developer account</strong> with X (formerly twitter). This is free, and you only need basic access.</p>
 
@@ -510,7 +519,7 @@ Lets head on over to your internet browser 🔍
 <!-- Generate authentication keys -->
 
 <details>
-<summary>Generate authentication keys</summary>
+<summary>2️⃣ Generate authentication keys</summary>
 
 <ul>
   <li>On the landing page, you should see a default project and app already created (basic plan only allows one). Click the <strong>gear icon ⚙️</strong> next to your App to configure authentication</li>
@@ -586,7 +595,7 @@ Lets head on over to your internet browser 🔍
 <!-- Create more keys and tokens -->
 
 <details>
-<summary>Create more keys and tokens</summary>
+<summary>3️⃣ Create more keys and tokens</summary>
 
 <ul>
   <li>Navigate back to the app details page, click on <strong><em>Keys and Tokens</em></strong></li>
@@ -642,7 +651,7 @@ Lets head on over to your internet browser 🔍
 <h3 id="step-5">Step 5: Install Python</h3>
 
 <details>
-<summary>Check Python Version</summary>
+<summary>1️⃣ Check Python Version</summary>
 
 <ul>
   <li>Open your terminal:
@@ -666,7 +675,7 @@ Lets head on over to your internet browser 🔍
 </details>
 
 <details>
-<summary>Don't have it? here's how to install</summary>
+<summary>2️⃣ Don't have it? here's how to install</summary>
 
 <ul>
   <li>Go to <a href="https://www.python.org/downloads/" target="_blank">python.org/downloads</a></li>
