@@ -4,7 +4,7 @@ layout: none
 
 <!-- Analytics -->
 
-<script defer data-domain="mhojan.github.io" src="https://plausible.io/js/script.file-downloads.outbound-links.js"></script>
+<script defer data-domain="mhojan.github.io/tweet-detox" src="https://plausible.io/js/script.file-downloads.outbound-links.js"></script>
 
 <!-- Head -->
 
@@ -14,7 +14,7 @@ layout: none
 
 <style>
 :root {
-  --bg-color: #fffaf6;
+  --bg-color: #f2f0ec;
   --main-bg-color: #f8f5f2;
   --info-box-bg-color: #f3f3f3;
   --code-box-bg-color: #f6f8fa;
@@ -41,7 +41,7 @@ p {
   line-height: 1.75;
 }
 
-main {
+.elevated-container {
   background-color: var(--main-bg-color);
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -61,7 +61,7 @@ h1 {
 }
 
 h2 {
-  font-weight: 400;
+  font-weight: 600;
   color: var(--text-color);
 }
 
@@ -124,11 +124,11 @@ summary {
 
 <!-- Title -->
 
-<main style="text-align: center;">
+<div class="elevated-container" style="text-align: center;">
 
-<h1> How to: Tweet Detox 🧹 </h1>
+<h1>How to: Tweet Detox 🧹 </h1>
 
-<h2> A step-by-step tutorial on how to clean up your digital X (formerly Twitter) footprint 👣 </h2>
+<h2>A step-by-step tutorial on how to clean up your digital X (formerly Twitter) footprint 👣</h2>
 
 <h4> By: MJ  </h4>
 
@@ -136,7 +136,7 @@ summary {
   <a href="https://instagram.com/madeintanzania" target="_blank">📷 @madeintanzania</a>
 </div>
 
-</main>
+</div>
 
 <!-- Table of contents -->
 
@@ -144,35 +144,45 @@ summary {
 
 - [🙋🏾‍♀️ Introduction](#introduction)
 - [⚠️ Legal & Responsible Use](#legal-responsible-use)
-- [📋 What You’ll Need](#what-youll-need) 
+- [📖 What You’ll Need](#what-youll-need)
 - [⏳ Estimated Time Breakdown](#estimated-time-breakdown)
 - [📝 Instructions](#instructions)
-    - [Step 1: Download Necessary Files](#step-1)  
-    - [Step 2: Download Your Archive](#step-2)  
-    - [Step 3: Create an X Developer Account](#step-3)  
-    - [Step 4: Set Up Your API Keys](#step-4)  
-    - [Step 5: Install Python](#step-5)  
-    - [Step 6: Run the Script](#step-6)  
-- [🏆 Mission Accomplished!](#mission-accomplished)  
+    - [Step 1: Download Necessary Files](#step-1)
+    - [Step 2: Download Your Archive](#step-2)
+    - [Step 3: Create an X Developer Account](#step-3)
+    - [Step 4: Set Up Your API Keys](#step-4)
+    - [Step 5: Install Python](#step-5)
+    - [Step 6: Run the Script](#step-6)
+- [🏆 Mission Accomplished!](#mission-accomplished)
 - [💬 Questions? Comments? Concerns?](#questions-comments-concerns)
 
 <!-- Introduction --> 
 
 <h2 id="introduction">🙋🏾‍♀️ Introduction </h2>
 
+<p>
 Hello 👋🏾 and welcome! My name is MJ, and I'm a Senior Software Engineer specialized in iOS 📲. 
+</p>
 
+<p>
 With privacy getting harder to protect as technology advances, I've been working on cleaning up my digital footprint. One of my biggest missions? Deleting my old tweets. I've had my account since high school.. and i am <strong>embarazzed</strong> by the things i used to do and say! Like what was i even talking about? lol
+</p>
 
+<p>
 I searched <strong>everywhere</strong> for tools to wipe them, but most were either broken, sketchy, or required payment. Just as I was about to give up, I had a lightbulb moment and realized: <strong>I can do it myself</strong> 💡 
+</p>
 
+<p>
 With a little research and effort, I put together a script that helped me delete over <strong>40,000 tweets 🎉</strong>. After sharing it with friends, I got a lot of requests to help others do the same. So, here we are.
+</p>
 
 <div class="info-box">
 <strong>This tutorial is beginner friendly </strong>. No tech experience is needed. This runs 100% local, so your data never leaves your machine. No logins, no hidden apps -- just you, your archive, and a script 😀
 </div>
 
+<p>
 Just follow my lead, and let me know if you run into issues. Let's get into it! 🚀
+</p>
 
 <!-- Legal & Responsible Use --> 
 
@@ -180,7 +190,7 @@ Just follow my lead, and let me know if you run into issues. Let's get into it! 
 
 Now.. before we start, I'd like to avoid any legal trouble 😅. So here's a quick disclaimer before we continue:
 
-<main>
+<div class="elevated-container">
 <p><strong>This tool is for educational and personal use only.</strong></p>
 <p>By using this script, you agree to the following:</p>
 
@@ -191,7 +201,7 @@ Now.. before we start, I'd like to avoid any legal trouble 😅. So here's a qui
 
 This script is <strong>not affiliated with or endorsed by X/Twitter</strong>. Use at your own risk. The author assumes no liability for misuse, bans, or accidental tweet deletions.
 
-</main>
+</div>
 
 <strong>Long story short:</strong> This script is just for cleaning up your <strong>own</strong> account. Don’t share your keys with <strong><em>anyone</em></strong>, don't do anything <strong><em>shady</em></strong>, and you'll be fine. This tool is not affiliated with X/Twitter. It's just a personal tool to help you take control of your content
 
@@ -205,7 +215,9 @@ Great! Lets get started.. 🏃🏾‍♀️
 - 🛜 Access to the internet
 - 🙏🏾 Patience and perseverance
 
+<aside>
 <strong>Note:</strong> I personally use a Mac, but I did my best to include Windows steps throughout this guide. Let me know if anything's unclear!
+</aside>
 
 <!-- Estimated Time Breakdown --> 
 
@@ -392,13 +404,13 @@ In order to run the tweet deletion script, you'll need a set of API credentials.
 </div>
 
 - The description needs to be at least 250 characters, stating how exactly you plan to use the API. This is what i wrote (w/ the help of ChatGPT):
-<main>
+<div class="elevated-container">
 <em>I am using a personal script to delete old tweets from my own account as part of cleaning up my digital footprint.
 I will only use my own X Developer credentials, and won't share or sell them
 I will not access or delete tweets from any account that is not my own.
 This script is for personal use only, and complies with X's policies.
 </em>
-</main>
+</div>
 
 - Once you're done, and agree to all the terms, click <strong>Submit</strong>. Approval is usually instant, and you'll land in the Developer Portal Dashboard
 </details>
