@@ -8,7 +8,7 @@ layout: none
 
 <!-- Head -->
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
 
 <!-- Styling -->
 
@@ -25,7 +25,7 @@ layout: none
 }
 
 body {
-  font-family: 'Roboto Mono', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 18px;
   line-height: 1.5;
   background-color: var(--bg-color);
@@ -114,7 +114,6 @@ summary {
 
 .container {
   width: 85%;
-  max-width: 850px;
   margin: 2rem auto;
   padding: 2rem;
 }
@@ -141,25 +140,25 @@ summary {
 
 <!-- Table of contents -->
 
-## 🧭 Table of Contents
+<h2>🧭 Table of Contents</h2>
 
-- [🙋🏾‍♀️ Introduction](#-introduction)
-- [⚠️ Legal & Responsible Use](#️-legal--responsible-use)
-- [📋 What You’ll Need](#-what-youll-need) 
-- [⏳ Estimated Time Breakdown](#-estimated-time-breakdown)
-- [📝 Instructions](#-instructions)
-    - [Step 1: Download Necessary Files](#step-1-download-necessary-files)  
-    - [Step 2: Download Your Archive](#step-2-download-your-archive)  
-    - [Step 3: Create an X Developer Account](#step-3-create-an-x-developer-account)  
-    - [Step 4: Set Up Your API Keys](#step-4-set-up-your-api-keys)  
-    - [Step 5: Install Python](#step-5-install-python)  
-    - [Step 6: Run the Script](#step-6-run-the-script)  
-- [🏆 Mission Accomplished!](#-mission-accomplished)  
-- [💬 Questions? Comments? Concerns?](#-questions-comments-concerns)
+- [🙋🏾‍♀️ Introduction](#introduction)
+- [⚠️ Legal & Responsible Use](#legal-responsible-use)
+- [📋 What You’ll Need](#what-youll-need) 
+- [⏳ Estimated Time Breakdown](#estimated-time-breakdown)
+- [📝 Instructions](#instructions)
+    - [Step 1: Download Necessary Files](#step-1)  
+    - [Step 2: Download Your Archive](#step-2)  
+    - [Step 3: Create an X Developer Account](#step-3)  
+    - [Step 4: Set Up Your API Keys](#step-4)  
+    - [Step 5: Install Python](#step-5)  
+    - [Step 6: Run the Script](#step-6)  
+- [🏆 Mission Accomplished!](#mission-accomplished)  
+- [💬 Questions? Comments? Concerns?](#questions-comments-concerns)
 
 <!-- Introduction --> 
 
-<h2> 🙋🏾‍♀️ Introduction </h2>
+<h2 id="introduction">🙋🏾‍♀️ Introduction </h2>
 
 Hello 👋🏾 and welcome! My name is MJ, and I'm a Senior Software Engineer specialized in iOS 📲. 
 
@@ -177,7 +176,7 @@ Just follow my lead, and let me know if you run into issues. Let's get into it! 
 
 <!-- Legal & Responsible Use --> 
 
-<h2> ⚠️ Legal & Responsible Use </h2>
+<h2 id="legal-responsible-use">⚠️ Legal & Responsible Use </h2>
 
 Now.. before we start, I'd like to avoid any legal trouble 😅. So here's a quick disclaimer before we continue:
 
@@ -200,7 +199,7 @@ Great! Lets get started.. 🏃🏾‍♀️
 
 <!-- What You'll Need --> 
 
-<h2> 📋 What You’ll Need </h2>
+<h2 id="what-youll-need"> 📋 What You’ll Need </h2>
 
 - 💻 A computer (Mac or Windows) 
 - 🛜 Access to the internet
@@ -210,7 +209,7 @@ Great! Lets get started.. 🏃🏾‍♀️
 
 <!-- Estimated Time Breakdown --> 
 
-## ⏳ Estimated Time Breakdown
+<h2 id="estimated-time-breakdown">⏳ Estimated Time Breakdown</h2>
 
 <div class="info-box">
   <strong>⏱️ Total Active Time: ~30–45 mins</strong><br>  
@@ -226,13 +225,55 @@ Great! Lets get started.. 🏃🏾‍♀️
 | 🐍 Step 5 | Install Python                 | 3–10 min |
 | 🏃🏾‍♀️ Step 6 | Run the script                 | 2-5 min (then let it run!) |
 
+<table>
+  <thead>
+    <tr>
+      <th>Step</th>
+      <th>Description</th>
+      <th>Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>📁 Step 1</td>
+      <td>Download necessary files</td>
+      <td>3–5 min</td>
+    </tr>
+    <tr>
+      <td>⬇️ Step 2</td>
+      <td>Download your archive</td>
+      <td>5 min + wait</td>
+    </tr>
+    <tr>
+      <td>🛠 Step 3</td>
+      <td>Create an X Developer Account</td>
+      <td>10–15 min</td>
+    </tr>
+    <tr>
+      <td>🔑 Step 4</td>
+      <td>Setup your API Keys</td>
+      <td>2–4 min</td>
+    </tr>
+    <tr>
+      <td>🐍 Step 5</td>
+      <td>Install Python</td>
+      <td>3–10 min</td>
+    </tr>
+    <tr>
+      <td>🏃🏾‍♀️ Step 6</td>
+      <td>Run the script</td>
+      <td>2–5 min (then let it run!)</td>
+    </tr>
+  </tbody>
+</table>
+
 <!-- Instructions -->
 
-<h2>📝 Instructions<h2>
+<h2 id="instructions">📝 Instructions<h2>
 
 <!-- Step 1 - Download Necessary Files -->
 
-<h3>Step 1: Download Necessary Files</h3>
+<h3 id="step-1">Step 1: Download Necessary Files</h3>
 
 <div class="info-box">
   For the sake of simplicity -- and making the next steps easier -- I recommend saving all your files to your <strong>Desktop</strong>. This folder will be your working directory for the rest of the setup.
@@ -249,7 +290,7 @@ Great! Lets get started.. 🏃🏾‍♀️
 
 <!-- Step 2: Download your archive -->
 
-<h3>Step 2: Download your archive</h3>
+<h3 id="step-2">Step 2: Download your archive</h3>
 
 Lets head on over to your internet browser 🔍
 
@@ -321,7 +362,7 @@ Lets head on over to your internet browser 🔍
 
 <!-- Step 3: Create an X Developer Account -->
 
-<h3>Step 3: Create an X Developer Account</h3>
+<h3 id="step-3">Step 3: Create an X Developer Account</h3>
 
 Okay, this part's the longest to actively get through, but <strong>I promise, it's not hard</strong>. Take your time, and follow along, and you'll be done in no time! 🛠️✨
 
@@ -423,7 +464,7 @@ X (Twitter) requires valid-looking URLs during setup, but we’re not hosting a 
 
 <!-- Step 4: Set up your API keys -->
 
-<h3>Step 4: Set up your API keys</h3>
+<h3 id="step-4">Step 4: Set up your API keys</h3>
 
 Now that you've got your credentials, it's time to put them to use.
 
@@ -444,7 +485,7 @@ To make it visible:
 
 <!-- Step 5: Install Python -->
 
-<h3>Step 5: Install Python</h3>
+<h3 id="step-5">Step 5: Install Python</h3>
 
 <details>
 <summary>Check Python Version</summary>
