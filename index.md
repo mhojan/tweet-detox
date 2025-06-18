@@ -125,11 +125,11 @@ summary {
 
 <main style="text-align: center;">
 
-# How to: Tweet Detox 🧹
+<h1> How to: Tweet Detox 🧹 </h1>
 
-## A step-by-step tutorial on how to clean up your digital X (formerly Twitter) footprint 👣
+<h2> A step-by-step tutorial on how to clean up your digital X (formerly Twitter) footprint 👣 </h2>
 
-#### By: MJ 
+<h4> By: MJ  </h4>
 
 <div style="text-align: center; margin-top: 1rem;">
   <a href="https://instagram.com/madeintanzania" target="_blank">📷 @madeintanzania</a>
@@ -180,17 +180,15 @@ Just follow my lead, and let me know if you run into issues. Let's get into it! 
 Now.. before we start, I'd like to avoid any legal trouble 😅. So here's a quick disclaimer before we continue:
 
 <main>
-
-**This tool is for educational and personal use only.**
-
+<strong> This tool is for educational and personal use only. </strong>
 By using this script, you agree to the following:
 
-- You will use **your own X (formerly Twitter) Developer App credentials**.
+- You will use <strong>your own X (formerly Twitter) Developer App credentials</strong>.
 - You will not share, sell, or distribute your API keys or access tokens.
 - You will not use this tool to access or delete tweets from any account that is not your own.
 - You are responsible for staying within X’s Developer Agreement and Rate Limit policies.
 
-This script is **not affiliated with or endorsed by X/Twitter**.  
+This script is <strong>not affiliated with or endorsed by X/Twitter</strong>.  
 Use at your own risk. The author assumes no liability for misuse, bans, or accidental tweet deletions.
 
 </main>
