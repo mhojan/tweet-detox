@@ -14,8 +14,8 @@ layout: none
 
 <style>
 :root {
-  --bg-color: #e8e6e1;
-  --elevated-bg-color: #f4f3f0;
+  --bg-color: #f5f3ee;
+  --main-bg-color: #e8e1d9;
   --info-box-bg-color: #dcdcdc;
   --code-box-bg-color: #dcdfe3;
 
@@ -32,7 +32,6 @@ body {
   color: var(--text-color);
   padding: 4rem 1.5rem;
   margin: 0;
-  margin-top: 1.0rem;
   word-break: normal;
   overflow-wrap: break-word;
 }
