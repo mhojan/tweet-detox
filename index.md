@@ -17,7 +17,7 @@ layout: none
   --bg-color: #f8f5f2;
   --main-bg-color: #f8f5f2;
   --info-box-bg-color: #f3f3f3;
-  --code-box-bg-color: #f5f5f5;
+  --code-box-bg-color: #f6f8fa;
 
   --text-color: #2e2e2e;
   --link-color: #0070f3;
@@ -108,9 +108,11 @@ a:hover {
 
 code {
   background: var(--code-box-bg-color);
+  color: #24292f;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   padding: 0.2em 0.4em;
   border-radius: 4px;
-  font-size: 90%;
+  font-size: 85%;
 }
 
 summary {
@@ -180,16 +182,15 @@ Just follow my lead, and let me know if you run into issues. Let's get into it! 
 Now.. before we start, I'd like to avoid any legal trouble 😅. So here's a quick disclaimer before we continue:
 
 <main>
-<strong> This tool is for educational and personal use only. </strong>
-By using this script, you agree to the following:
+<p><strong> This tool is for educational and personal use only. </strong></p>
+<p>By using this script, you agree to the following:</p>
 
-- You will use <strong>your own X (formerly Twitter) Developer App credentials</strong>.
-- You will not share, sell, or distribute your API keys or access tokens.
-- You will not use this tool to access or delete tweets from any account that is not your own.
-- You are responsible for staying within X’s Developer Agreement and Rate Limit policies.
+<p>- You will use <strong>your own X (formerly Twitter) Developer App credentials</strong>.</p>
+- You will not share, sell, or distribute your API keys or access tokens.</p>
+- You will not use this tool to access or delete tweets from any account that is not your own.</p>
+- You are responsible for staying within X’s Developer Agreement and Rate Limit policies.</p>
 
-This script is <strong>not affiliated with or endorsed by X/Twitter</strong>.  
-Use at your own risk. The author assumes no liability for misuse, bans, or accidental tweet deletions.
+This script is <strong>not affiliated with or endorsed by X/Twitter</strong>. Use at your own risk. The author assumes no liability for misuse, bans, or accidental tweet deletions.
 
 </main>
 
@@ -227,11 +228,11 @@ Great! Lets get started.. 🏃🏾‍♀️
 
 <!-- Instructions -->
 
-## 📝 Instructions
+<h2> 📝 Instructions <h2>
 
 <!-- Step 1 - Download Necessary Files -->
 
-### Step 1: Download Necessary Files
+<h3>Step 1: Download Necessary Files</h3>
 
 <div class="info-box">
   For the sake of simplicity -- and making the next steps easier -- I recommend saving all your files to your <strong>Desktop</strong>. This folder will be your working directory for the rest of the setup.
@@ -248,7 +249,7 @@ Great! Lets get started.. 🏃🏾‍♀️
 
 <!-- Step 2: Download your archive -->
 
-### Step 2: Download your archive
+<h3>Step 2: Download your archive</h3>
 
 Lets head on over to your internet browser 🔍
 
@@ -320,7 +321,7 @@ Lets head on over to your internet browser 🔍
 
 <!-- Step 3: Create an X Developer Account -->
 
-### Step 3: Create an X Developer Account
+<h3>Step 3: Create an X Developer Account</h3>
 
 Okay, this part's the longest to actively get through, but **I promise, it's not hard**. Take your time, and follow along, and you'll be done in no time! 🛠️✨
 
@@ -421,7 +422,7 @@ X (Twitter) requires valid-looking URLs during setup, but we’re not hosting a 
 
 <!-- Step 4: Set up your API keys -->
 
-### Step 4: Set up your API keys
+<h3>Step 4: Set up your API keys</h3>
 
 Now that you've got your credentials, it's time to put them to use.
 
@@ -442,7 +443,7 @@ To make it visible:
 
 <!-- Step 5: Install Python -->
 
-### Step 5: Install Python
+<h3>Step 5: Install Python</h3>
 
 - Open your terminal:
     - On **Mac**: Open Terminal (press `Command + Space` and search for **Terminal**)
@@ -459,7 +460,8 @@ python3 --version
 ```
 If you see something like Python 3.x.x, you’re all set! Skip to the next step 🐍 🎉
 
-#### ❌ Don't have it? here's how to install:
+<h5> ❌ Don't have it? here's how to install:</h5>
+
 - Go to python.org/downloads
 - Click Download Python 3.X.X
 - Run the installer and follow the steps
