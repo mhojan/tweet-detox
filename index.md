@@ -32,6 +32,11 @@ body {
   color: var(--text-color);
   padding: 4rem 1.5rem;
   margin: 0;
+  margin-top: 1.0rem;
+}
+
+p {
+  line-height: 1.75;
 }
 
 main {
@@ -121,7 +126,8 @@ summary {
 - [🙋🏾‍♀️ Introduction](#-introduction)
 - [⚠️ Legal & Responsible Use](#️-legal--responsible-use)
 - [📋 What You’ll Need](#-what-youll-need) 
-- [⏳ Estimated Time Breakdown](#-estimated-time-breakdown) 
+- [⏳ Estimated Time Breakdown](#-estimated-time-breakdown)
+- [📝 Instructions](#-instructions)
 
 <!-- Introduction --> 
 
@@ -190,5 +196,31 @@ Great! Lets get started.. 🏃🏾‍♀️
 | ⬇️ Step 2 | Download your archive          | 5 min + wait |
 | 🛠 Step 3 | Create an X Developer Account  | 10–15 min |
 | 🔑 Step 4 | Setup your API Keys            | 2–4 min |
-| 🐍 Step 5 | Check or install Python        | 3–10 min |
+| 🐍 Step 5 | Install Python                 | 3–10 min |
 | 🏃🏾‍♀️ Step 6 | Run the script                 | 2-5 min (then let it run!) |
+
+<!-- Instructions -->
+
+## 📝 Instructions
+
+<!-- Step 1 - Download Necessary Files -->
+
+### Step 1: Download Necessary Files
+
+<div class="info-box">
+  For the sake of simplicity -- and making the next steps easier -- I recommend saving all your files to your <strong>Desktop</strong> 
+</div>
+
+- Click below to download the setup files:
+    - [👉🏾 Download tweet-detox.zip](resources/tweet-detox.zip)
+- Depending on your computer's setup, your browser may either ask where to save the file, or automatically download it to your default folder (most likely **Downloads**).
+    - In either case, move `tweet-detox.zip` to your **Desktop**
+- Then unzip it:
+	•	On **Mac**: double-click the file
+	•	On **Windows**: right-click → **Extract All**
+- You should now see the unzipped `tweet-detox` folder on your Desktop ✅
+
+<div class="info-box">
+<strong>This folder will be your working directory for the rest of the setup</strong>
+</div>
+
