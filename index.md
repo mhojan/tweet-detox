@@ -313,3 +313,104 @@ Lets head on over to your internet browser 🔍
   <strong>✨ Bonus:</strong> You can open <code>Your archive.html</code> for a visual overview of your entire account history. Double clicking the file should open your browser
 </div>
 </details>
+
+<!-- Step 3: Create an X Developer Account -->
+
+### Step 3: Create an X Developer Account
+
+Okay, this part's the longest to actively get through, but **I promise, it's not hard**. Take your time, and follow along, and you'll be done in no time! 🛠️✨
+
+<!-- Create a developer account -->
+
+<details>
+<summary>Create a developer account</summary>
+
+In order to run the tweet deletion script, you'll need a set of API credentials. This means creating a **developer account** with X (formerly twitter). This is free, and you only need basic access. 
+
+- Go to the [X Developer Portal](https://developer.x.com/en/portal/dashboard)
+- You'll be asked to log in with your X account (if you aren't already)
+- If you land on a marketing/landing page, click **Developer Portal** in the top right
+
+<div class="image-div">
+<img src="images/step3-landing-page.png" style="max-height: 400px;"/>
+</div>
+
+- You'll see a screen like this, click **Sign up for Free Account**
+<div class="image-div">
+<img src="images/step3-developer-portal.png" style="max-height: 400px;" />
+</div>
+
+- You'll be prompted to describe how you plan to use the API. This helps ensures you're not using it for anything shady
+<div class="image-div">
+<img src="images/step3-developer-agreement-policy.png" style="max-height: 400px;" />
+</div>
+
+- The description needs to be at least 250 characters, stating how exactly you plan to use the API. This is what i wrote (w/ the help of ChatGPT):
+<main>
+I am using a personal script to delete old tweets from my own account as part of cleaning up my digital footprint.
+I will only use my own X Developer credentials, and won't share or sell them
+I will not access or delete tweets from any account that is not my own.
+This script is for personal use only, and complies with X's policies.
+</main>
+
+- Once you're done, and agree to all the terms, click **Submit**. Approval is usually instant, and you'll land in the Developer Portal Dashboard
+</details>
+
+<!-- Generate authentication keys -->
+
+<details>
+<summary>Generate authentication keys</summary>
+
+- On the landing page, you should see a default project and app already created (basic plan only allows one). Click the **gear icon ⚙️** next to your App to configure authentication
+<div class="image-div">
+<img src="images/step3-project-app.png" style="max-height: 400px;" />
+</div>
+
+- On the app details page, click **Set up** under **User authentication settings**
+<div class="image-div">
+<img src="images/step3-auth-settings.png" style="max-height: 400px;" />
+</div>
+
+- Fill in these details **exactly** as shown:
+<div class="image-div">
+<img src="images/step3-user-auth-settings.png" style="max-height: 400px;" />
+</div>
+
+- Under **App Info**, enter the following:
+
+| **Field**           | **Value**                          |
+|---------------------|------------------------------------|
+| Callback URL        | `https://example.com/callback`     |
+| Website URL         | `https://example.com`              |
+
+<div class="info-box">
+<strong>Wait, why does it say example.com?</strong>
+X (Twitter) requires valid-looking URLs during setup, but we’re not hosting a real website.
+<code>https://example.com</code> is just makes setup work — nothing gets sent there 👍🏾
+</div>
+
+- When prompted, click **Yes** to confirm your changes
+<div class="image-div">
+<img src="images/step3-changing-permissions.png" style="max-height: 400px;" />
+</div>
+
+- Once setup is complete, you'll be shown your client key and token. 
+<strong> 🚨 Save these somewhere safe</strong> — they won’t be shown again! 🚨
+</details>
+
+<!-- Create more keys and tokens -->
+
+<details>
+<summary>Create more keys and tokens</summary>
+
+- Navigate back to the app details page, click on ***Keys and Tokens***
+- Under **Consumer Keys**:
+    - Click **Regenerate**
+    - This will give you both your **API key** and **Secret key**
+    - Save both in the same secure place you used for the authentication keys
+
+- Under **Authentication Tokens**:
+    - Click **Regenerate** next to "Access Token and Secret"
+    - This will generate the **Access token** and **Access token secret** key
+    - Save these as well!!
+</details>
