@@ -4,7 +4,9 @@ layout: none
 
 <!-- Analytics -->
 
-<script defer data-domain="mhojan.github.io" src="https://plausible.io/js/script.file-downloads.outbound-links.js"></script>
+<head>
+<script defer data-domain="mhojan.github.io/tweet-detox" src="https://plausible.io/js/script.js"></script>
+</head>
 
 <!-- Head -->
 
