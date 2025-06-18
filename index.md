@@ -16,7 +16,7 @@ layout: none
 :root {
   --bg-color: #f8f5f2;
   --main-bg-color: #f8f5f2;
-  --info-box-bg-color: #f8f5f2;
+  --info-box-bg-color: #f3f3f3;
   --code-box-bg-color: #f5f5f5;
 
   --text-color: #2e2e2e;
@@ -118,7 +118,10 @@ summary {
 
 ## 🧭 Table of Contents
 
-- [⏱️ Introduction](#-introduction)
+- [🙋🏾‍♀️ Introduction](#-introduction)
+- [⚠️ Legal & Responsible Use](#️-legal--responsible-use)
+- [📋 What You’ll Need](#-what-youll-need) 
+- [⏳ Estimated Time Breakdown](#-estimated-time-breakdown) 
 
 <!-- Introduction --> 
 
@@ -138,3 +141,54 @@ With a little research and effort, I put together a script that helped me delete
 
 Just follow my lead, and let me know if you run into issues. Let's get into it! 🚀
 
+<!-- Legal & Responsible Use --> 
+
+## ⚠️ Legal & Responsible Use
+
+Now.. before we start, I'd like to avoid any legal trouble 😅. So here's a quick disclaimer before we continue:
+
+<main>
+
+**This tool is for educational and personal use only.**
+
+By using this script, you agree to the following:
+
+- You will use **your own X (formerly Twitter) Developer App credentials**.
+- You will not share, sell, or distribute your API keys or access tokens.
+- You will not use this tool to access or delete tweets from any account that is not your own.
+- You are responsible for staying within X’s Developer Agreement and Rate Limit policies.
+
+This script is **not affiliated with or endorsed by X/Twitter**.  
+Use at your own risk. The author assumes no liability for misuse, bans, or accidental tweet deletions.
+
+</main>
+
+**Long story short:** This script is just for cleaning up your **own** account. Don’t share your keys with ***anyone***, don't do anything ***shady***, and you'll be fine. This tool is not affiliated with X/Twitter. It's just a personal tool to help you take control of your content
+
+Great! Lets get started.. 🏃🏾‍♀️
+
+<!-- What You'll Need --> 
+
+## 📋 What You’ll Need
+
+- 💻 A computer (Mac or Windows) 
+- 🛜 Access to the internet
+- 🙏🏾 Patience and perseverance
+
+<!-- Estimated Time Breakdown --> 
+
+## ⏳ Estimated Time Breakdown
+
+<div class="info-box">
+  <strong>⏱️ Total Active Time: ~30–45 mins</strong><br>  
+  🧘🏾‍♀️ Plus passive wait time for archive downloads & the script to complete
+</div>
+
+| Step | Description                        | Time |
+|------|------------------------------------|------|
+| 📁 Step 1 | Download necessary files       | 3–5 min |
+| ⬇️ Step 2 | Download your archive          | 5 min + wait |
+| 🛠 Step 3 | Create an X Developer Account  | 10–15 min |
+| 🔑 Step 4 | Setup your API Keys            | 2–4 min |
+| 🐍 Step 5 | Check or install Python        | 3–10 min |
+| 🏃🏾‍♀️ Step 6 | Run the script                 | 2-5 min (then let it run!) |
