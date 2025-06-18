@@ -199,6 +199,8 @@ Great! Lets get started.. 🏃🏾‍♀️
 - 🛜 Access to the internet
 - 🙏🏾 Patience and perseverance
 
+**Note:** I personally use a Mac, but I did my best to include Windows steps throughout this guide. Let me know if anything's unclear!
+
 <!-- Estimated Time Breakdown --> 
 
 ## ⏳ Estimated Time Breakdown
@@ -226,7 +228,7 @@ Great! Lets get started.. 🏃🏾‍♀️
 ### Step 1: Download Necessary Files
 
 <div class="info-box">
-  For the sake of simplicity -- and making the next steps easier -- I recommend saving all your files to your <strong>Desktop</strong> 
+  For the sake of simplicity -- and making the next steps easier -- I recommend saving all your files to your <strong>Desktop</strong>. This folder will be your working directory for the rest of the setup.
 </div>
 
 - Click below to download the setup files:
@@ -237,10 +239,6 @@ Great! Lets get started.. 🏃🏾‍♀️
 	•	On **Mac**: double-click the file
 	•	On **Windows**: right-click → **Extract All**
 - You should now see the unzipped `tweet-detox` folder on your Desktop ✅
-
-<div class="info-box">
-<strong>This folder will be your working directory for the rest of the setup</strong>
-</div>
 
 <!-- Step 2: Download your archive -->
 
@@ -414,3 +412,50 @@ X (Twitter) requires valid-looking URLs during setup, but we’re not hosting a 
     - This will generate the **Access token** and **Access token secret** key
     - Save these as well!!
 </details>
+
+<!-- Step 4: Set up your API keys -->
+
+### Step 4: Set up your API keys
+
+Now that you've got your credentials, it's time to put them to use.
+
+- Open your `tweet-detox` folder on your **Desktop**
+- Locate the file named `env-template.txt`
+- Right-click the file and choose **Open With** → your preferred text editor (Notepad, TextEdit, VS Code, etc.)
+- Replace each instance of `your_api_key_here` with the actual credentials you saved in the previous step
+- Save the file, and close the editor
+- Finally, rename `env-template.txt` to `.env`. It must be renamed to **exactly** this, nothing more, nothing less.
+
+<div class="info-box">
+⚠️ Don’t be alarmed if the file seems to disappear after renaming-- files that start with a . are hidden by default on some systems. It’s still there!
+
+To make it visible:
+- On **Mac**: Press `Command + Shift + .` while in Finder to toggle hidden files.
+- On **Windows**:  In File Explorer, click **View** > check **Hidden items**.
+</div>
+
+<!-- Step 5: Install Python -->
+
+### Step 5: Install Python
+
+- Open your terminal:
+    - On **Mac**: Open Terminal (press `Command + Space` and search for **Terminal**)
+    - On **Windows**: Use Command Prompt or Windows Terminal
+
+- Type or copy and paste the following:
+```bash
+python --version
+```
+or if that doesn't work:
+
+```bash
+python3 --version
+```
+If you see something like Python 3.x.x, you’re all set! Skip to the next step 🐍 🎉
+
+#### ❌ Don't have it? here's how to install:
+- Go to python.org/downloads
+- Click Download Python 3.X.X
+- Run the installer and follow the steps
+    - ⚠️ On Windows, be sure to check **Add Python to PATH** before clicking install!
+- Once done, try running the version command again to confirm it worked
