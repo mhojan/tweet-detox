@@ -16,7 +16,7 @@ layout: none
 :root {
   --bg-color: #e8e6e1;
   --elevated-bg-color: #f4f3f0;
-  --info-box-bg-color: #e6e4e1;
+  --info-box-bg-color: #dcdcdc;
   --code-box-bg-color: #dcdfe3;
 
   --text-color: #s;
