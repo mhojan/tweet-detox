@@ -88,6 +88,16 @@ a:hover {
   line-height: 1.6;
 }
 
+.image-div {
+  text-align: center;
+  max-width: 0.75;
+}
+
+.image-div img {
+  max-width: 75%;
+  border-radius: 12px;
+}
+
 code {
   background: var(--code-box-bg-color);
   padding: 0.2em 0.4em;
@@ -128,6 +138,14 @@ summary {
 - [📋 What You’ll Need](#-what-youll-need) 
 - [⏳ Estimated Time Breakdown](#-estimated-time-breakdown)
 - [📝 Instructions](#-instructions)
+    - [Step 1: Download Necessary Files](#step-1-download-necessary-files)  
+    - [Step 2: Download Your Archive](#step-2-download-your-archive)  
+    - [Step 3: Create an X Developer Account](#step-3-create-an-x-developer-account)  
+    - [Step 4: Set Up Your API Keys](#step-4-set-up-your-api-keys)  
+    - [Step 5: Install Python](#step-5-install-python)  
+    - [Step 6: Run the Script](#step-6-run-the-script)  
+- [🏆 Mission Accomplished!](#-mission-accomplished)  
+- [💬 Questions? Comments? Concerns?](#-questions-comments-concerns)
 
 <!-- Introduction --> 
 
@@ -224,3 +242,74 @@ Great! Lets get started.. 🏃🏾‍♀️
 <strong>This folder will be your working directory for the rest of the setup</strong>
 </div>
 
+<!-- Step 2: Download your archive -->
+
+### Step 2: Download your archive
+
+Lets head on over to your internet browser 🔍
+
+<!-- Request to download archive-->
+
+<details>
+<summary>Request to download archive</summary>
+
+- Log in to your X account
+
+- Go to [your account settings](https://x.com/settings/account)
+
+- Click **Download an archive of your data**
+
+<div class="image-div">
+<img src="images/step2-download-archive-settings.png" style="max-height: 465px;" />
+</div>
+
+- You will be asked to verify your password here, and then enter the code sent to your email
+- Once you're in, you should see something like this:
+
+<div class="image-div">
+<img src="images/step2-download-archive.png" style="max-height: 300px;" />
+</div>
+
+- Click **"Request archive"**, and wait for a confirmation email or notification. This can take anywhere from a few minutes to several hours ⏳
+</details>
+
+<!-- Download your archive -->
+
+<details>
+<summary>Download your archive</summary>
+
+- When you get the email, open the link, (or revisit the account settings page). After verifying again, you'll be able to download your archive
+<div class="image-div">
+<img src="images/step2-verification-email.png" style="max-height: 400px;" />
+</div>
+
+- Click **"Download archive"**
+
+<div class="image-div">
+<img src="images/step2-download-archive.png" style="max-height: 400px;" />
+</div>
+
+- To make the next steps easier, save the `.zip` file to the `tweet-detox` folder from step 1. The downloaded archive zip file name should begin with `twitter-2025-...` 
+
+<div class="info-box">
+  ⏳ This download may take some time, depending on how active your X account has been
+</div>
+</details>
+
+<!-- Open your archive -->
+
+<details>
+<summary>Open your archive</summary>
+
+- Unzip the file
+
+- Inside the unzipped folder, open the folder named `data`
+
+- The only file we need is `tweets.js` -- this contains **all** your tweets and retweets 
+
+- Copy `tweets.js` paste it into the **main** `tweet-detox` folder (essentially outside of the unzipped folder)
+
+<div class="info-box">
+  <strong>✨ Bonus:</strong> You can open <code>Your archive.html</code> for a visual overview of your entire account history. Double clicking the file should open your browser
+</div>
+</details>
