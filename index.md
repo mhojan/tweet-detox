@@ -8,7 +8,7 @@ layout: none
 
 <!-- Head -->
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto Mono:wght@400;600&display=swap" rel="stylesheet">
 
 <!-- Styling -->
 
@@ -25,7 +25,7 @@ layout: none
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: 'Roboto Mono', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 18px;
   line-height: 1.5;
   background-color: var(--bg-color);
@@ -67,12 +67,6 @@ h2 {
   font-weight: 400;
   color: var(--text-color);
   margin-bottom: 2.5rem;
-}
-
-h1, h2, h3, h4 {
-  max-width: 100%;
-  word-break: normal;
-  white-space: normal;
 }
 
 a {
