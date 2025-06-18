@@ -14,7 +14,7 @@ layout: none
 
 <style>
 :root {
-  --bg-color: #f8f5f2;
+  --bg-color: #fffaf6;
   --main-bg-color: #f8f5f2;
   --info-box-bg-color: #f3f3f3;
   --code-box-bg-color: #f6f8fa;
