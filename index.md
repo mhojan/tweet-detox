@@ -8,7 +8,7 @@ layout: none
 
 <!-- Head -->
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto Mono:wght@400;600&display=swap" rel="stylesheet">
 
 <!-- Styling -->
 
@@ -16,8 +16,8 @@ layout: none
 :root {
   --bg-color: #f2f0ec;
   --main-bg-color: #f8f5f2;
-  --info-box-bg-color: #f3f3f3;
-  --code-box-bg-color: #f6f8fa;
+  --info-box-bg-color: #e6e6e6;
+  --code-box-bg-color: #dcdfe3;
 
   --text-color: #2e2e2e;
   --link-color: #0070f3;
@@ -25,7 +25,7 @@ layout: none
 }
 
 body {
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: 'Roboto Mono', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 18px;
   line-height: 1.5;
   background-color: var(--bg-color);
@@ -90,7 +90,7 @@ summary {
 }
 
 table {
-  width: 100%;
+  width: 75%;
   border-collapse: collapse;
   margin: 1.5rem 0;
 }
@@ -102,7 +102,7 @@ th, td {
 }
 
 th {
-  background-color: #f5f5f5;
+  background-color: var(info-box-color);
   font-weight: 600;
 }
 
@@ -163,38 +163,50 @@ hr {
 
 <h2>🧭 Table of Contents</h2>
 
-- [🙋🏾‍♀️ Introduction](#introduction)
-- [⚠️ Legal & Responsible Use](#legal-responsible-use)
-- [📖 What You’ll Need](#what-youll-need)
-- [⏳ Estimated Time Breakdown](#estimated-time-breakdown)
-- [📝 Instructions](#instructions)
-    - [Step 1: Download Necessary Files](#step-1)
-    - [Step 2: Download Your Archive](#step-2)
-    - [Step 3: Create an X Developer Account](#step-3)
-    - [Step 4: Set Up Your API Keys](#step-4)
-    - [Step 5: Install Python](#step-5)
-    - [Step 6: Run the Script](#step-6)
-- [🏆 Mission Accomplished!](#mission-accomplished)
-- [💬 Questions? Comments? Concerns?](#questions-comments-concerns)
+<ul>
+  <li><a href="#introduction">🙋🏾‍♀️ Introduction</a></li>
+  <li><a href="#legal-responsible-use">⚠️ Legal & Responsible Use</a></li>
+  <li><a href="#what-youll-need">📖 What You’ll Need</a></li>
+  <li><a href="#estimated-time-breakdown">⏳ Estimated Time Breakdown</a></li>
+  <li><a href="#instructions">📝 Instructions</a>
+    <ul>
+      <li><a href="#step-1">Step 1: Download Necessary Files</a></li>
+      <li><a href="#step-2">Step 2: Download Your Archive</a></li>
+      <li><a href="#step-3">Step 3: Create an X Developer Account</a></li>
+      <li><a href="#step-4">Step 4: Set Up Your API Keys</a></li>
+      <li><a href="#step-5">Step 5: Install Python</a></li>
+      <li><a href="#step-6">Step 6: Run the Script</a></li>
+    </ul>
+  </li>
+  <li><a href="#mission-accomplished">🏆 Mission Accomplished!</a></li>
+  <li><a href="#questions-comments-concerns">💬 Questions? Comments? Concerns?</a></li>
+</ul>
 
 <hr />
 
 <!-- Introduction --> 
 
-<h2 id="introduction">🙋🏾‍♀️ Introduction </h2>
+<h2 id="introduction">🙋🏾‍♀️ Introduction</h2>
 
-Hello 👋🏾 and welcome! My name is Me, and I'm a Senior Software Engineer specialized in iOS 📲.  
-With privacy getting harder to protect as technology advances, I've been working on cleaning up my digital footprint. One of my biggest missions? Deleting my old tweets. I've had my account since high school.. and I am **embarazzed** by the things I used to do and say! Like what was I even talking about? lol
+<p>Hello 👋🏾 and welcome! My name is Me, and I'm a Senior Software Engineer specialized in iOS 📲.</p>
 
-I searched **everywhere** for tools to wipe them, but most were either broken, sketchy, or required payment. Just as I was about to give up, I had a lightbulb moment and realized: **I can do it myself** 💡
+<p>
+With privacy getting harder to protect as technology advances, I've been working on cleaning up my digital footprint. One of my biggest missions? Deleting my old tweets. I've had my account since high school.. and I am <strong>embarazzed</strong> by the things I used to do and say! Like what was I even talking about? lol
+</p>
 
-With a little research and effort, I put together a script that helped me delete over **40,000 tweets 🎉**. After sharing it with friends, I got a lot of requests to help others do the same. So, here we are.
+<p>
+I searched <strong>everywhere</strong> for tools to wipe them, but most were either broken, sketchy, or required payment. Just as I was about to give up, I had a lightbulb moment and realized: <strong>I can do it myself</strong> 💡
+</p>
+
+<p>
+With a little research and effort, I put together a script that helped me delete over <strong>40,000 tweets 🎉</strong>. After sharing it with friends, I got a lot of requests to help others do the same. So, here we are.
+</p>
 
 <div class="info-box">
-<strong>This tutorial is beginner friendly.</strong> No tech experience is needed. This runs 100% local, so your data never leaves your machine. No logins, no hidden apps -- just you, your archive, and a script 😀
+  <strong>This tutorial is beginner friendly.</strong> No tech experience is needed. This runs 100% local, so your data never leaves your machine. No logins, no hidden apps -- just you, your archive, and a script 😀
 </div>
 
-Just follow my lead, and let me know if you run into issues. Let's get into it! 🚀
+<p>Just follow my lead, and let me know if you run into issues. Let's get into it! 🚀</p>
 
 <hr />
 
@@ -302,14 +314,30 @@ Great! Lets get started.. 🏃🏾‍♀️
   For the sake of simplicity -- and making the next steps easier -- I recommend saving all your files to your <strong>Desktop</strong>. This folder will be your working directory for the rest of the setup.
 </div>
 
-- Click below to download the setup files:
-    - [👉🏾 Download tweet-detox.zip](resources/tweet-detox.zip)
-- Depending on your computer's setup, your browser may either ask where to save the file, or automatically download it to your default folder (most likely <strong>Downloads</strong>).
-    - In either case, move `tweet-detox.zip` to your <strong>Desktop</strong>
-- Then unzip it:
-	•	On <strong>Mac</strong>: double-click the file
-	•	On <strong>Windows</strong>: right-click → <strong>Extract All</strong>
-- You should now see the unzipped `tweet-detox` folder on your Desktop ✅
+<ul>
+  <li>
+    Click below to download the setup files:
+    <ul>
+      <li><a href="resources/tweet-detox.zip">👉🏾 Download tweet-detox.zip</a></li>
+    </ul>
+  </li>
+  <li>
+    Depending on your computer's setup, your browser may either ask where to save the file, or automatically download it to your default folder (most likely <strong>Downloads</strong>).
+    <ul>
+      <li>In either case, move <code>tweet-detox.zip</code> to your <strong>Desktop</strong></li>
+    </ul>
+  </li>
+  <li>
+    Then unzip it:
+    <ul>
+      <li>On <strong>Mac</strong>: double-click the file</li>
+      <li>On <strong>Windows</strong>: right-click → <strong>Extract All</strong></li>
+    </ul>
+  </li>
+  <li>
+    You should now see the unzipped <code>tweet-detox</code> folder on your Desktop ✅
+  </li>
+</ul>
 
 <!-- Step 2: Download your archive -->
 
@@ -411,7 +439,7 @@ Lets head on over to your internet browser 🔍
 
 <h3 id="step-3">Step 3: Create an X Developer Account</h3>
 
-Okay, this part's the longest to actively get through, but **I promise, it's not hard**. Take your time, and follow along, and you'll be done in no time! 🛠️✨
+<p>Okay, this part's the longest to actively get through, but <strong>I promise, it's not hard</strong>. Take your time, and follow along, and you'll be done in no time! 🛠️✨</p>
 
 <!-- Create a developer account -->
 
@@ -574,21 +602,24 @@ Okay, this part's the longest to actively get through, but **I promise, it's not
 
 <h3 id="step-4">Step 4: Set up your API keys</h3>
 
-Now that you've got your credentials, it's time to put them to use.
+<p>Now that you've got your credentials, it's time to put them to use.</p>
 
-- Open your `tweet-detox` folder on your **Desktop**
-- Locate the file named `env-template.txt`
-- Right-click the file and choose **Open With** → your preferred text editor (Notepad, TextEdit, VS Code, etc.)
-- Replace each instance of `your_api_key_here` with the actual credentials you saved in the previous step
-- Save the file, and close the editor
-- Finally, rename `env-template.txt` to `.env`. It must be renamed to **exactly** this, nothing more, nothing less.
+<ul>
+  <li>Open your <code>tweet-detox</code> folder on your <strong>Desktop</strong></li>
+  <li>Locate the file named <code>env-template.txt</code></li>
+  <li>Right-click the file and choose <strong>Open With</strong> → your preferred text editor (Notepad, TextEdit, VS Code, etc.)</li>
+  <li>Replace each instance of <code>your_api_key_here</code> with the actual credentials you saved in the previous step</li>
+  <li>Save the file, and close the editor</li>
+  <li>Finally, rename <code>env-template.txt</code> to <code>.env</code>. It must be renamed to <strong>exactly</strong> this, nothing more, nothing less.</li>
+</ul>
 
 <div class="info-box">
-⚠️ Don’t be alarmed if the file seems to disappear after renaming-- files that start with a . are hidden by default on some systems. It’s still there!
-
-To make it visible:
-- On <strong>Mac</strong>: Press `Command + Shift + .` while in Finder to toggle hidden files.
-- On <strong>Windows</strong>:  In File Explorer, click <strong>View</strong> > check <strong>Hidden items</strong>.
+  ⚠️ Don’t be alarmed if the file seems to disappear after renaming — files that start with a <code>.</code> are hidden by default on some systems. It’s still there!<br /><br />
+  <strong>To make it visible:</strong>
+  <ul>
+    <li>On <strong>Mac</strong>: Press <code>Command + Shift + .</code> while in Finder to toggle hidden files.</li>
+    <li>On <strong>Windows</strong>: In File Explorer, click <strong>View</strong> > check <strong>Hidden items</strong>.</li>
+  </ul>
 </div>
 
 <!-- Step 5: Install Python -->
@@ -635,5 +666,4 @@ To make it visible:
 </ul>
 
 </details>
-
 </div>
