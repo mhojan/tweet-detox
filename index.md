@@ -107,7 +107,7 @@ th {
 }
 
 .container {
-  max-width: 90%;
+  max-width: 75%;
   margin: 2rem auto;
   padding: 2rem;
 }
@@ -320,110 +320,148 @@ Lets head on over to your internet browser 🔍
 <!-- Request to download archive-->
 
 <details>
-<summary>Request to download archive</summary>
+  <summary>Request to download archive</summary>
 
-- Log in to your X account
+  <ul>
+    <li>Log in to your X account</li>
+    <li>
+      Go to <a href="https://x.com/settings/account" target="_blank">your account settings</a>
+    </li>
+    <li>Click <strong>Download an archive of your data</strong></li>
+  </ul>
 
-- Go to [your account settings](https://x.com/settings/account)
+  <div class="image-div">
+    <img src="images/step2-download-archive-settings.png" style="max-height: 465px;" />
+  </div>
 
-- Click <strong>Download an archive of your data</strong>
+  <ul>
+    <li>You will be asked to verify your password, then enter the code sent to your email</li>
+    <li>Once you're in, you should see something like this:</li>
+  </ul>
 
-<div class="image-div">
-<img src="images/step2-download-archive-settings.png" style="max-height: 465px;" />
-</div>
+  <div class="image-div">
+    <img src="images/step2-download-archive.png" style="max-height: 300px;" />
+  </div>
 
-- You will be asked to verify your password here, and then enter the code sent to your email
-- Once you're in, you should see something like this:
-
-<div class="image-div">
-<img src="images/step2-download-archive.png" style="max-height: 300px;" />
-</div>
-
-- Click <strong>Request archive</strong>, and wait for a confirmation email or notification. This can take anywhere from a few minutes to several hours ⏳
+  <ul>
+    <li>
+      Click <strong>Request archive</strong>, and wait for a confirmation email or notification.
+      This can take anywhere from a few minutes to several hours ⏳
+    </li>
+  </ul>
 </details>
 
 <!-- Download your archive -->
 
 <details>
-<summary>Download your archive</summary>
+  <summary>Download your archive</summary>
 
-- When you get the email, open the link, (or revisit the account settings page). After verifying again, you'll be able to download your archive
-<div class="image-div">
-<img src="images/step2-verification-email.png" style="max-height: 400px;" />
-</div>
+  <ul>
+    <li>When you get the email, open the link (or revisit the account settings page).</li>
+    <li>After verifying again, you'll be able to download your archive</li>
+  </ul>
 
-- Click <strong>Download archive</strong>
+  <div class="image-div">
+    <img src="images/step2-verification-email.png" style="max-height: 400px;" />
+  </div>
 
-<div class="image-div">
-<img src="images/step2-download-archive.png" style="max-height: 400px;" />
-</div>
+  <ul>
+    <li>Click <strong>Download archive</strong></li>
+  </ul>
 
-- To make the next steps easier, save the `.zip` file to the `tweet-detox` folder from step 1. The downloaded archive zip file name should begin with `twitter-2025-...` 
+  <div class="image-div">
+    <img src="images/step2-download-archive.png" style="max-height: 400px;" />
+  </div>
 
-<div class="info-box">
-  ⏳ This download may take some time, depending on how active your X account has been
-</div>
+  <ul>
+    <li>
+      To make the next steps easier, save the <code>.zip</code> file to the
+      <code>tweet-detox</code> folder from Step 1. The downloaded archive should begin with
+      <code>twitter-2025-...</code>
+    </li>
+  </ul>
+
+  <div class="info-box">
+    ⏳ This download may take some time, depending on how active your X account has been.
+  </div>
 </details>
 
 <!-- Open your archive -->
 
 <details>
-<summary>Open your archive</summary>
+  <summary>Open your archive</summary>
 
-- Unzip the file
+  <ul>
+    <li>Unzip the file.</li>
+    <li>Inside the unzipped folder, open the folder named <code>data</code>.</li>
+    <li>
+      The only file we need is <code>tweets.js</code> — this contains <strong>all</strong> your tweets and retweets.
+    </li>
+    <li>
+      Copy <code>tweets.js</code> and paste it into the <strong>main</strong> <code>tweet-detox</code> folder (outside of the unzipped archive).
+    </li>
+  </ul>
 
-- Inside the unzipped folder, open the folder named `data`
-
-- The only file we need is `tweets.js` -- this contains <strong>all</strong> your tweets and retweets 
-
-- Copy `tweets.js` paste it into the <strong>main</strong> `tweet-detox` folder (essentially outside of the unzipped folder)
-
-<div class="info-box">
-  <strong>✨ Bonus:</strong> You can open <code>Your archive.html</code> for a visual overview of your entire account history. Double clicking the file should open your browser
-</div>
+  <div class="info-box">
+    <strong>✨ Bonus:</strong> You can open <code>Your archive.html</code> for a visual overview of your entire account history. Double-clicking the file should open it in your browser.
+  </div>
 </details>
 
 <!-- Step 3: Create an X Developer Account -->
 
 <h3 id="step-3">Step 3: Create an X Developer Account</h3>
 
-Okay, this part's the longest to actively get through, but <strong>I promise, it's not hard</strong>. Take your time, and follow along, and you'll be done in no time! 🛠️✨
+Okay, this part's the longest to actively get through, but **I promise, it's not hard**. Take your time, and follow along, and you'll be done in no time! 🛠️✨
 
 <!-- Create a developer account -->
 
 <details>
 <summary>Create a developer account</summary>
 
-In order to run the tweet deletion script, you'll need a set of API credentials. This means creating a <strong>developer account</strong> with X (formerly twitter). This is free, and you only need basic access. 
+<p>In order to run the tweet deletion script, you'll need a set of API credentials. This means creating a <strong>developer account</strong> with X (formerly twitter). This is free, and you only need basic access.</p>
 
-- Go to the [X Developer Portal](https://developer.x.com/en/portal/dashboard)
-- You'll be asked to log in with your X account (if you aren't already)
-- If you land on a marketing/landing page, click <strong>Developer Portal</strong> in the top right
+<ul>
+  <li>Go to the <a href="https://developer.x.com/en/portal/dashboard" target="_blank">X Developer Portal</a></li>
+  <li>You'll be asked to log in with your X account (if you aren't already)</li>
+  <li>If you land on a marketing/landing page, click <strong>Developer Portal</strong> in the top right</li>
+</ul>
 
 <div class="image-div">
-<img src="images/step3-landing-page.png" style="max-height: 400px;"/>
+  <img src="images/step3-landing-page.png" style="max-height: 400px;" />
 </div>
 
-- You'll see a screen like this, click <strong>Sign up for Free Account</strong>
+<ul>
+  <li>You'll see a screen like this, click <strong>Sign up for Free Account</strong></li>
+</ul>
+
 <div class="image-div">
-<img src="images/step3-developer-portal.png" style="max-height: 400px;" />
+  <img src="images/step3-developer-portal.png" style="max-height: 400px;" />
 </div>
 
-- You'll be prompted to describe how you plan to use the API. This helps ensures you're not using it for anything shady
+<ul>
+  <li>You'll be prompted to describe how you plan to use the API. This helps ensures you're not using it for anything shady</li>
+</ul>
+
 <div class="image-div">
-<img src="images/step3-developer-agreement-policy.png" style="max-height: 400px;" />
+  <img src="images/step3-developer-agreement-policy.png" style="max-height: 400px;" />
 </div>
 
-- The description needs to be at least 250 characters, stating how exactly you plan to use the API. This is what i wrote (w/ the help of ChatGPT):
+<ul>
+  <li>The description needs to be at least 250 characters, stating how exactly you plan to use the API. This is what i wrote (w/ the help of ChatGPT):</li>
+</ul>
+
 <div class="elevated-container">
-<em>I am using a personal script to delete old tweets from my own account as part of cleaning up my digital footprint.
-I will only use my own X Developer credentials, and won't share or sell them
-I will not access or delete tweets from any account that is not my own.
-This script is for personal use only, and complies with X's policies.
-</em>
+  <em>
+    I am using a personal script to delete old tweets from my own account as part of cleaning up my digital footprint.<br>
+    I will only use my own X Developer credentials, and won't share or sell them<br>
+    I will not access or delete tweets from any account that is not my own.<br>
+    This script is for personal use only, and complies with X's policies.
+  </em>
 </div>
 
-- Once you're done, and agree to all the terms, click <strong>Submit</strong>. Approval is usually instant, and you'll land in the Developer Portal Dashboard
+<ul>
+  <li>Once you're done, and agree to all the terms, click <strong>Submit</strong>. Approval is usually instant, and you'll land in the Developer Portal Dashboard</li>
+</ul>
 </details>
 
 <!-- Generate authentication keys -->
@@ -431,41 +469,75 @@ This script is for personal use only, and complies with X's policies.
 <details>
 <summary>Generate authentication keys</summary>
 
-- On the landing page, you should see a default project and app already created (basic plan only allows one). Click the <strong>gear icon ⚙️</strong> next to your App to configure authentication
+<ul>
+  <li>On the landing page, you should see a default project and app already created (basic plan only allows one). Click the <strong>gear icon ⚙️</strong> next to your App to configure authentication</li>
+</ul>
+
 <div class="image-div">
-<img src="images/step3-project-app.png" style="max-height: 400px;" />
+  <img src="images/step3-project-app.png" style="max-height: 400px;" />
 </div>
 
-- On the app details page, click <strong>Set up</strong> under <strong>User authentication settings</strong>
+<ul>
+  <li>On the app details page, click <strong>Set up</strong> under <strong>User authentication settings</strong></li>
+</ul>
+
 <div class="image-div">
-<img src="images/step3-auth-settings.png" style="max-height: 400px;" />
+  <img src="images/step3-auth-settings.png" style="max-height: 400px;" />
 </div>
 
-- Fill in these details <strong>exactly</strong> as shown:
+<ul>
+  <li>Fill in these details <strong>exactly</strong> as shown:</li>
+</ul>
+
 <div class="image-div">
-<img src="images/step3-user-auth-settings.png" style="max-height: 400px;" />
+  <img src="images/step3-user-auth-settings.png" style="max-height: 400px;" />
 </div>
 
-- Under <strong>App Info</strong>, enter the following:
-
-| **Field**           | **Value**                          |
-|---------------------|------------------------------------|
-| Callback URL        | `https://example.com/callback`     |
-| Website URL         | `https://example.com`              |
+<ul>
+  <li>
+  Under <strong>App Info</strong>, enter the following:
+    <table>
+    <thead>
+        <tr>
+        <th><strong>Field</strong></th>
+        <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>Callback URL</td>
+        <td><code>https://example.com/callback</code></td>
+        </tr>
+        <tr>
+        <td>Website URL</td>
+        <td><code>https://example.com</code></td>
+        </tr>
+    </tbody>
+    </table>
+  </li>
+</ul>
 
 <div class="info-box">
-<strong>Wait, why does it say example.com?</strong>
-X (Twitter) requires valid-looking URLs during setup, but we’re not hosting a real website.
-<code>https://example.com</code> is just makes setup work — nothing gets sent there 👍🏾
+  <strong>Wait, why does it say example.com?</strong><br>
+  X (Twitter) requires valid-looking URLs during setup, but we’re not hosting a real website.<br>
+  <code>https://example.com</code> just makes setup work — nothing gets sent there 👍🏾
 </div>
 
-- When prompted, click <strong>Yes</strong> to confirm your changes
+<ul>
+  <li>When prompted, click <strong>Yes</strong> to confirm your changes</li>
+</ul>
+
 <div class="image-div">
-<img src="images/step3-changing-permissions.png" style="max-height: 400px;" />
+  <img src="images/step3-changing-permissions.png" style="max-height: 400px;" />
 </div>
 
-- Once setup is complete, you'll be shown your client key and token. 
-<strong>🚨 Save these somewhere safe</strong> — they won’t be shown again! 🚨
+<ul>
+  <li>Once setup is complete, you'll be shown your client key and token.</li>
+</ul>
+
+<div class="info-box">
+    <strong>🚨 Save these somewhere safe</strong> — they won’t be shown again! 🚨
+</div>
 </details>
 
 <!-- Create more keys and tokens -->
@@ -473,16 +545,29 @@ X (Twitter) requires valid-looking URLs during setup, but we’re not hosting a 
 <details>
 <summary>Create more keys and tokens</summary>
 
-- Navigate back to the app details page, click on</strong><em>Keys and Tokens</em></strong>
-- Under <strong>Consumer Keys</strong>:
-    - Click <strong>Regenerate</strong>
-    - This will give you both your <strong>API key</strong> and <strong>Secret key</strong>
-    - Save both in the same secure place you used for the authentication keys
+<ul>
+  <li>Navigate back to the app details page, click on <strong><em>Keys and Tokens</em></strong></li>
+</ul>
 
-- Under <strong>Authentication Tokens</strong>:
-    - Click <strong>Regenerate</strong> next to "Access Token and Secret"
-    - This will generate the <strong>Access token</strong> and <strong>Access token secret</strong> key
-    - Save these as well!!
+<ul>
+  <li>Under <strong>Consumer Keys</strong>:
+    <ul>
+      <li>Click <strong>Regenerate</strong></li>
+      <li>This will give you both your <strong>API key</strong> and <strong>Secret key</strong></li>
+      <li>Save both in the same secure place you used for the authentication keys</li>
+    </ul>
+  </li>
+</ul>
+
+<ul>
+  <li>Under <strong>Authentication Tokens</strong>:
+    <ul>
+      <li>Click <strong>Regenerate</strong> next to "Access Token and Secret"</li>
+      <li>This will generate the <strong>Access token</strong> and <strong>Access token secret</strong> key</li>
+      <li>Save these as well!!</li>
+    </ul>
+  </li>
+</ul>
 </details>
 
 <!-- Step 4: Set up your API keys -->
@@ -491,12 +576,12 @@ X (Twitter) requires valid-looking URLs during setup, but we’re not hosting a 
 
 Now that you've got your credentials, it's time to put them to use.
 
-- Open your `tweet-detox` folder on your <strong>Desktop</strong>
+- Open your `tweet-detox` folder on your **Desktop**
 - Locate the file named `env-template.txt`
-- Right-click the file and choose <strong>Open With</strong> → your preferred text editor (Notepad, TextEdit, VS Code, etc.)
+- Right-click the file and choose **Open With** → your preferred text editor (Notepad, TextEdit, VS Code, etc.)
 - Replace each instance of `your_api_key_here` with the actual credentials you saved in the previous step
 - Save the file, and close the editor
-- Finally, rename `env-template.txt` to `.env`. It must be renamed to <strong>exactly</strong> this, nothing more, nothing less.
+- Finally, rename `env-template.txt` to `.env`. It must be renamed to **exactly** this, nothing more, nothing less.
 
 <div class="info-box">
 ⚠️ Don’t be alarmed if the file seems to disappear after renaming-- files that start with a . are hidden by default on some systems. It’s still there!
@@ -513,33 +598,42 @@ To make it visible:
 <details>
 <summary>Check Python Version</summary>
 
-- Open your terminal:
-    - On <strong>Mac</strong>: Open Terminal (press `Command + Space` and search for <strong>Terminal</strong>)
-    - On <strong>Windows</strong>: Use Command Prompt or Windows Terminal
+<ul>
+  <li>Open your terminal:
+    <ul>
+      <li><strong>Mac:</strong> Open Terminal (press <code>Command + Space</code> and search for <strong>Terminal</strong>)</li>
+      <li><strong>Windows:</strong> Use Command Prompt or Windows Terminal</li>
+    </ul>
+  </li>
 
-- Type or copy and paste the following:
-```bash
-python --version
-```
-or if that doesn't work:
+  <li>Type or copy and paste the following:</li>
+</ul>
 
-```bash
-python3 --version
-```
-If you see something like `Python 3.x.x`, you’re all set! Skip to the next step 🐍🎉
+<pre><code>python --version</code></pre>
+
+<p>or if that doesn't work:</p>
+
+<pre><code>python3 --version</code></pre>
+
+<p>If you see something like <code>Python 3.x.x</code>, you’re all set! Skip to the next step 🐍🎉</p>
+
 </details>
 
 <details>
 <summary>Don't have it? here's how to install</summary>
 
-- Go to python.org/downloads
-- Click <strong>Download Python 3.X.X</strong>
-- Run the installer and follow the steps
-    - ⚠️ On Windows, be sure to check <strong>Add Python to PATH</strong> before clicking install!
-- Once done, try running the version command again to confirm it worked
-- If this doesn't work, try restarting the terminal and try confirming again
+<ul>
+  <li>Go to <a href="https://www.python.org/downloads/" target="_blank">python.org/downloads</a></li>
+  <li>Click <strong>Download Python 3.X.X</strong></li>
+  <li>Run the installer and follow the steps:
+    <ul>
+      <li>⚠️ On <strong>Windows</strong>, be sure to check <strong>Add Python to PATH</strong> before clicking install!</li>
+    </ul>
+  </li>
+  <li>Once done, try running the version command again to confirm it worked</li>
+  <li>If this doesn't work, try restarting the terminal and try confirming again</li>
+</ul>
+
 </details>
 
 </div>
-
-<hr />
