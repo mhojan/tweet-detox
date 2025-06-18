@@ -92,7 +92,7 @@ summary {
 table {
   width: 75%;
   border-collapse: collapse;
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
 }
 
 th, td {
@@ -102,8 +102,7 @@ th, td {
 }
 
 th {
-  background-color: var(info-box-color);
-  font-weight: 600;
+  background-color: var(--info-box-bg-color);
 }
 
 .container {
