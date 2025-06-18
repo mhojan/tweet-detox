@@ -41,26 +41,7 @@ p {
   line-height: 1.75;
 }
 
-.elevated-container {
-  background-color: var(--main-bg-color);
-  margin: 0 auto;
-  margin-bottom: 2rem;
-  padding: 3rem 2rem;
-  border-radius: 25px;
-  box-shadow: 
-    0 4px 12px rgba(0, 0, 0, 0.08),
-    0 0 0 1px rgba(0, 0, 0, 0.03),
-    0 8px 24px rgba(0, 0, 0, 0.06);;
-}
-
-h1 {
-  text-align: center;
-  font-weight: 600;
-  margin-top: 0;
-  color: var(--text-color);
-}
-
-h2 {
+h1, h2 {
   font-weight: 600;
   color: var(--text-color);
 }
@@ -76,19 +57,15 @@ a:hover {
   border-bottom: 1px solid var(--link-hover-color);
 }
 
-.info-box {
-  background-color: var(--info-box-bg-color);
-  padding: 1rem 1.25rem;
-  border-left: 4px solid #ccc;
-  border-radius: 8px;
-  margin: 2rem 0;
-  font-size: 0.95rem;
-  line-height: 1.6;
+.ig-link {
+    text-align: center;
+    margin-top: 1rem;
 }
 
 .image-div {
   text-align: center;
   max-width: 75%;
+  margin: 0 auto;
 }
 
 .image-div img {
@@ -112,12 +89,57 @@ summary {
   cursor: pointer;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
 .container {
-  width: 85%;
+  max-width: 90%;
   margin: 2rem auto;
   padding: 2rem;
 }
 
+.elevated-container {
+  background-color: var(--main-bg-color);
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 3rem 2rem;
+  border-radius: 25px;
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(0, 0, 0, 0.03),
+    0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.info-box {
+  background-color: var(--info-box-bg-color);
+  padding: 1rem 1.25rem;
+  border-left: 4px solid #ccc;
+  border-radius: 8px;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 2rem 0;
+  height: 0;
+}
 </style>
 
 <div class="container">
@@ -132,10 +154,9 @@ summary {
 
 <h4> By: MJ  </h4>
 
-<div style="text-align: center; margin-top: 1rem;">
+<div class="ig-link">
   <a href="https://instagram.com/madeintanzania" target="_blank">📷 @madeintanzania</a>
 </div>
-
 </div>
 
 <!-- Table of contents -->
@@ -156,33 +177,26 @@ summary {
 - [🏆 Mission Accomplished!](#mission-accomplished)
 - [💬 Questions? Comments? Concerns?](#questions-comments-concerns)
 
+<hr />
+
 <!-- Introduction --> 
 
 <h2 id="introduction">🙋🏾‍♀️ Introduction </h2>
 
-<p>
-Hello 👋🏾 and welcome! My name is MJ, and I'm a Senior Software Engineer specialized in iOS 📲. 
-</p>
+Hello 👋🏾 and welcome! My name is Me, and I'm a Senior Software Engineer specialized in iOS 📲.  
+With privacy getting harder to protect as technology advances, I've been working on cleaning up my digital footprint. One of my biggest missions? Deleting my old tweets. I've had my account since high school.. and I am **embarazzed** by the things I used to do and say! Like what was I even talking about? lol
 
-<p>
-With privacy getting harder to protect as technology advances, I've been working on cleaning up my digital footprint. One of my biggest missions? Deleting my old tweets. I've had my account since high school.. and i am <strong>embarazzed</strong> by the things i used to do and say! Like what was i even talking about? lol
-</p>
+I searched **everywhere** for tools to wipe them, but most were either broken, sketchy, or required payment. Just as I was about to give up, I had a lightbulb moment and realized: **I can do it myself** 💡
 
-<p>
-I searched <strong>everywhere</strong> for tools to wipe them, but most were either broken, sketchy, or required payment. Just as I was about to give up, I had a lightbulb moment and realized: <strong>I can do it myself</strong> 💡 
-</p>
-
-<p>
-With a little research and effort, I put together a script that helped me delete over <strong>40,000 tweets 🎉</strong>. After sharing it with friends, I got a lot of requests to help others do the same. So, here we are.
-</p>
+With a little research and effort, I put together a script that helped me delete over **40,000 tweets 🎉**. After sharing it with friends, I got a lot of requests to help others do the same. So, here we are.
 
 <div class="info-box">
-<strong>This tutorial is beginner friendly </strong>. No tech experience is needed. This runs 100% local, so your data never leaves your machine. No logins, no hidden apps -- just you, your archive, and a script 😀
+<strong>This tutorial is beginner friendly.</strong> No tech experience is needed. This runs 100% local, so your data never leaves your machine. No logins, no hidden apps -- just you, your archive, and a script 😀
 </div>
 
-<p>
 Just follow my lead, and let me know if you run into issues. Let's get into it! 🚀
-</p>
+
+<hr />
 
 <!-- Legal & Responsible Use --> 
 
@@ -207,6 +221,8 @@ This script is <strong>not affiliated with or endorsed by X/Twitter</strong>. Us
 
 Great! Lets get started.. 🏃🏾‍♀️
 
+<hr />
+
 <!-- What You'll Need --> 
 
 <h2 id="what-youll-need"> 📋 What You’ll Need </h2>
@@ -219,6 +235,8 @@ Great! Lets get started.. 🏃🏾‍♀️
 <strong>Note:</strong> I personally use a Mac, but I did my best to include Windows steps throughout this guide. Let me know if anything's unclear!
 </aside>
 
+<hr />
+
 <!-- Estimated Time Breakdown --> 
 
 <h2 id="estimated-time-breakdown">⏳ Estimated Time Breakdown</h2>
@@ -227,15 +245,6 @@ Great! Lets get started.. 🏃🏾‍♀️
   <strong>⏱️ Total Active Time: ~30–45 mins</strong><br>  
   🧘🏾‍♀️ Plus passive wait time for archive downloads & the script to complete
 </div>
-
-| Step | Description                        | Time |
-|------|------------------------------------|------|
-| 📁 Step 1 | Download necessary files       | 3–5 min |
-| ⬇️ Step 2 | Download your archive          | 5 min + wait |
-| 🛠 Step 3 | Create an X Developer Account  | 10–15 min |
-| 🔑 Step 4 | Setup your API Keys            | 2–4 min |
-| 🐍 Step 5 | Install Python                 | 3–10 min |
-| 🏃🏾‍♀️ Step 6 | Run the script                 | 2-5 min (then let it run!) |
 
 <table>
   <thead>
@@ -278,6 +287,8 @@ Great! Lets get started.. 🏃🏾‍♀️
     </tr>
   </tbody>
 </table>
+
+<hr />
 
 <!-- Instructions -->
 
@@ -530,3 +541,5 @@ If you see something like `Python 3.x.x`, you’re all set! Skip to the next ste
 </details>
 
 </div>
+
+<hr />
