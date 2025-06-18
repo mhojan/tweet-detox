@@ -8,7 +8,7 @@ layout: none
 
 <!-- Head -->
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
 <!-- Styling -->
 
@@ -25,7 +25,7 @@ layout: none
 }
 
 body {
-  font-family: 'Roboto Mono', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 18px;
   line-height: 1.5;
   background-color: var(--bg-color);
@@ -239,13 +239,15 @@ Great! Lets get started.. 🏃🏾‍♀️
 
 <h2 id="what-youll-need"> 📋 What You’ll Need </h2>
 
-- 💻 A computer (Mac or Windows) 
-- 🛜 Access to the internet
-- 🙏🏾 Patience and perseverance
+<ul>
+  <li>💻 A computer (Mac or Windows)</li>
+  <li>🛜 Access to the internet</li>
+  <li>🙏🏾 Patience and perseverance</li>
+</ul>
 
-<aside>
+<p>
 <strong>Note:</strong> I personally use a Mac, but I did my best to include Windows steps throughout this guide. Let me know if anything's unclear!
-</aside>
+</p>
 
 <hr />
 
@@ -385,7 +387,7 @@ Lets head on over to your internet browser 🔍
   <summary>Download your archive</summary>
 
   <ul>
-    <li>When you get the email, open the link (or revisit the account settings page).</li>
+    <li>When you get the email, open the link (or revisit the account settings page)</li>
     <li>After verifying again, you'll be able to download your archive</li>
   </ul>
 
