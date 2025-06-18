@@ -8,7 +8,7 @@ layout: none
 
 <!-- Head -->
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <!-- Styling -->
 
@@ -41,9 +41,23 @@ p {
   line-height: 1.75;
 }
 
-h1, h2 {
+h1 {
+  font-weight: 800;
+  color: var(--text-color);
+}
+
+h2, h3 {
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+h4, h5 {
   font-weight: 600;
   color: var(--text-color);
+}
+
+strong, b {
+  font-weight: 700; /* or 800 for maximum boldness */
 }
 
 a {
