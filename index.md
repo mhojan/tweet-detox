@@ -33,6 +33,8 @@ body {
   padding: 4rem 1.5rem;
   margin: 0;
   margin-top: 1.0rem;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 p {
@@ -65,6 +67,12 @@ h2 {
   font-weight: 400;
   color: var(--text-color);
   margin-bottom: 2.5rem;
+}
+
+h1, h2, h3, h4 {
+  max-width: 100%;
+  word-break: normal;
+  white-space: normal;
 }
 
 a {
@@ -458,4 +466,4 @@ If you see something like Python 3.x.x, you’re all set! Skip to the next step 
 - Click Download Python 3.X.X
 - Run the installer and follow the steps
     - ⚠️ On Windows, be sure to check **Add Python to PATH** before clicking install!
-- Once done, try running the version command again to confirm it worked
+- Once done, try running the version command again to confirm it worked (also might need to restart terminal if this doesn't work)
