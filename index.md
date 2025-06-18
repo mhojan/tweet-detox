@@ -8,7 +8,7 @@ layout: none
 
 <!-- Head -->
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
 <!-- Styling -->
 
@@ -43,7 +43,7 @@ p {
 
 main {
   background-color: var(--main-bg-color);
-  max-width: 0.75;
+  max-width: 75%;
   margin: 0 auto;
   margin-bottom: 2rem;
   padding: 3rem 2rem;
@@ -98,7 +98,7 @@ a:hover {
 
 .image-div {
   text-align: center;
-  max-width: 0.75;
+  max-width: 75%;
 }
 
 .image-div img {
