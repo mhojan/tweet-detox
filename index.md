@@ -16,7 +16,7 @@ layout: none
 :root {
   --bg-color: #e8e6e1;
   --elevated-bg-color: #f4f3f0;
-  --info-box-bg-color: #e6e6e6;
+  --info-box-bg-color: #e6e4e1;
   --code-box-bg-color: #dcdfe3;
 
   --text-color: #s;
@@ -154,6 +154,7 @@ th {
   margin: 2rem 0;
   font-size: 0.95rem;
   line-height: 1.6;
+  color: #2c2c2c;
 }
 
 hr {
@@ -463,7 +464,7 @@ Lets head on over to your internet browser 🔍
 
 <h3 id="step-3">Step 3: Create an X Developer Account</h3>
 
-<p>Okay, this part's the longest to actively get through, but <strong>I promise, it's not hard</strong>. Take your time, and follow along, and you'll be done in no time! 🛠️✨</p>
+<p>Okay, this part's the longest to actively get through, but <strong>I promise, it's not hard</strong>. Take your time, and follow along. You'll be done in no time! 🛠️✨</p>
 
 <!-- Create a developer account -->
 
