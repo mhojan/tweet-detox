@@ -20,8 +20,8 @@ layout: none
   --code-box-bg-color: #dcdfe3;
 
   --text-color: #s;
-  --link-color: #0070f3;
-  --link-hover-color: #0050c2;
+  --link-color: #3366cc;
+  --link-hover-color: #1a53b0;
 }
 
 body {
@@ -63,7 +63,7 @@ strong, b {
 a {
   color: var(--link-color);
   text-decoration: none;
-  border-bottom: 1px solid #cce4ff;
+  border-bottom: 1px solid rgba(51, 102, 204, 0.2);
 }
 
 a:hover {
