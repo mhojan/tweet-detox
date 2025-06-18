@@ -2,15 +2,13 @@
 layout: none
 ---
 
-<!-- Analytics -->
-
 <head>
-<script defer data-domain="mhojan.github.io/tweet-detox" src="https://plausible.io/js/script.js"></script>
+  <!-- Analytics -->
+  <script defer data-domain="mhojan.github.io/tweet-detox" src="https://plausible.io/js/script.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
-
-<!-- Head -->
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <!-- Styling -->
 
