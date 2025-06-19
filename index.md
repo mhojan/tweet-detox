@@ -242,12 +242,14 @@ Now.. before we start, I'd like to avoid any legal trouble 😅. So here's a qui
 <p><strong>This tool is for educational and personal use only.</strong></p>
 <p>By using this script, you agree to the following:</p>
 
-<p>- You will use <strong>your own X (formerly Twitter) Developer App credentials</strong>.</p>
-- You will not share, sell, or distribute your API keys or access tokens.</p>
-- You will not use this tool to access or delete tweets from any account that is not your own.</p>
-- You are responsible for staying within X’s Developer Agreement and Rate Limit policies.</p>
+<ol>
+  <li>You will use <strong>your own X (formerly Twitter) Developer App credentials</strong>.</li>
+  <li>You will not share, sell, or distribute your API keys or access tokens.</li>
+  <li>You will not use this tool to access or delete tweets from any account that is not your own.</li>
+  <li>You are responsible for staying within X’s Developer Agreement and Rate Limit policies.</li>
+</ol>
 
-This script is <strong>not affiliated with or endorsed by X/Twitter</strong>. Use at your own risk. The author assumes no liability for misuse, bans, or accidental tweet deletions.
+<p>This script is <strong>not affiliated with or endorsed by X/Twitter</strong>. Use at your own risk. The author assumes no liability for misuse, bans, or accidental tweet deletions.</p>
 
 </div>
 
