@@ -14,7 +14,7 @@ layout: none
 
 <style>
 :root {
-  --bg-color: #f5f3ee;
+  --bg-color: #eeeae6;
   --main-bg-color: #e8e1d9;
   --info-box-bg-color: #dcdcdc;
   --code-box-bg-color: #dcdfe3;
@@ -263,6 +263,7 @@ Great! Lets get started.. 🏃🏾‍♀️
 
 <ul>
   <li>💻 A computer (Mac or Windows)</li>
+  <li>💬 A text editor of your choice (I recommend <a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a>, but any will do</li>
   <li>🛜 Access to the internet</li>
   <li>🙏🏾 Patience and perseverance</li>
 </ul>
@@ -634,17 +635,7 @@ Lets head on over to your internet browser 🔍
   <li>Right-click the file and choose <strong>Open With</strong> → your preferred text editor (Notepad, TextEdit, VS Code, etc.)</li>
   <li>Replace each instance of <code>your_api_key_here</code> with the actual credentials you saved in the previous step</li>
   <li>Save the file, and close the editor</li>
-  <li>Finally, rename <code>env-template.txt</code> to <code>.env</code>. It must be renamed to <strong>exactly</strong> this, nothing more, nothing less.</li>
 </ul>
-
-<div class="info-box">
-  ⚠️ Don’t be alarmed if the file seems to disappear after renaming — files that start with a <code>.</code> are hidden by default on some systems. It’s still there!<br /><br />
-  <strong>To make it visible:</strong>
-  <ul>
-    <li>On <strong>Mac</strong>: Press <code>Command + Shift + .</code> while in Finder to toggle hidden files.</li>
-    <li>On <strong>Windows</strong>: In File Explorer, click <strong>View</strong> > check <strong>Hidden items</strong>.</li>
-  </ul>
-</div>
 
 <!-- Step 5: Install Python -->
 
@@ -690,4 +681,135 @@ Lets head on over to your internet browser 🔍
 </ul>
 
 </details>
+
+<!-- Step 6: Run the Script -->
+
+<h3 id="step-6">Step 6: Run the Script</h3>
+
+<details>
+<summary>Prepare Your tweet.js file</summary>
+<ul>
+  <li>
+    You may need to update your <code>tweets.js</code> file before the script can use it:
+    <ul>
+      <li>In the <code>tweet-detox</code> folder, right-click <code>tweets.js</code> → <strong>Open with</strong> → select your editor of choice.</li>
+      <li>If you see <code>window.YTD.tweet.part0 = </code> at the top, <strong>delete that line</strong>.</li>
+      <li>Make sure the file:
+        <ul>
+          <li>Starts with <code>[</code></li>
+          <li>Ends with <code>]</code></li>
+        </ul>
+      </li> 
+    </ul>
+  </li>
+</ul>
+</details>
+
+<details>
+<summary>Update Your Desired Date Range</summary>
+<p>
+  Inside the <code>tweet-detox.py</code> script, there’s a section near the top where you can customize the time frame of tweets you want to delete
+</p>
+
+<ul>
+  <li>Open the file <code>tweet-detox.py</code> in your text editor</li>
+  <li>Scroll to the section that looks like this:
+    <pre><code># Optional: Set the date range for tweets you want to delete
+# Use the format: YYYY, M, D (Year, Month, Day)
+# If you leave one as None, it will just use the other limit
+MIN_DATE = datetime(2020, 6, 8)
+MAX_DATE = datetime(2022, 6, 8)</code></pre>
+  </li>
+  <li>Edit the <code>MIN_DATE</code> and <code>MAX_DATE</code> values to reflect your desired time frame
+    <ul>
+      <li>To delete all tweets before a certain date, set <code>MAX_DATE</code> and leave <code>MIN_DATE = None</code></li>
+      <li>To delete all tweets after a certain date, set <code>MIN_DATE</code> and leave <code>MAX_DATE = None</code></li>
+      <li>To delete everything ever: set both to <code>None</code></li>
+    </ul>
+  </li>
+</ul>
+
+<div class="info-box">
+💡 <strong>Example:</strong>  
+To delete tweets from 2021 and later, use:
+<pre><code>MIN_DATE = datetime(2021, 1, 1)
+MAX_DATE = None</code></pre>
+</div>
+
+<p>Once you've made your edits, save the file and you're good to go!</p>
+</details>
+
+<details>
+<summary>Rename <code>env-template.txt</code> to <code>.env</code></summary>
+
+<p>We need to rename the file so the script can find your credentials.</p>
+
+<ul>
+  <li>Open your terminal</li>
+  <li>If you followed Step 1 as recommended, navigate to the project folder:
+    <pre><code>cd ~/Desktop/tweet-detox</code></pre>
+  </li>
+  <li>Rename the file:
+    <pre><code>mv env-template.txt .env</code></pre>
+  </li>
+</ul>
+
+<div class="info-box">
+  ⚠️ Don’t be alarmed if the file seems to disappear after renaming — files starting with a <code>.</code> are hidden by default on some systems.<br /><br />
+  <strong>To make it visible:</strong>
+  <ul>
+    <li><strong>Mac:</strong> Press <code>Command + Shift + .</code> in Finder to toggle hidden files.</li>
+    <li><strong>Windows:</strong> In File Explorer, go to <strong>View</strong> → check <strong>Hidden items</strong>.</li>
+  </ul>
+</div>
+
+</details>
+
+<details>
+<summary>Run your script</summary>
+
+<p>Cool, so now we're ready to run things 😎</p>
+
+<ul>
+<li>To run the script, type or copy and paste the following:
+  <pre><code>python tweet-detox.py</code></pre>
+</li>
+<li>If that doesn't work, try:
+ <pre><code>python3 tweet-detox.py</code></pre>
+</li>
+<li>
+This will kick off the deletion workflow, and start wiping those old tweets out for you 🧹
+</li>
+</ul>
+<div class="info-box">
+  <strong>Heads up:</strong><br />
+  This step can take a while, especially if you have a lot of tweets. I had ~40,000 I wanted to delete, and it took a little over 24 hours to fully finish
+  <br /><br />
+  So just:
+  <ul>
+    <li>Leave your terminal open</li>
+    <li>Keep your computer from sleeping (I use the <a href="https://apps.apple.com/us/app/jolt-of-caffeine/id1437130425?mt=12" target="_blank">Jolt of Caffeine</a> app)</li>
+    <li>Let the script do its thing 👌🏾</li>
+  </ul>
+</div>
+</details>
+
+<hr />
+
+<!-- Finale -->
+
+<h2 id="mission-accomplished">🏆 That’s It!</h2>
+
+<p>Congrats on making it this far 🥳🎉. Once it's done, your old tweets are wiped, and your timeline is brand new.</p>
+
+<h2 id="questions-comments-concerns">💬 Questions? Comments? Concerns?</h2>
+
+<p>
+This is an open-source tool. All code is available for you to view yourself. Nothing is hidden, nothing is sent to me, and no data ever leaves your machine.
+</p>
+
+<p>
+Got feedback? Need help? Feel free to reach out to me on
+<a href="https://instagram.com/madeintanzania" target="_blank">Instagram</a> ☺️
+</p>
 </div>
